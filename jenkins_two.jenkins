@@ -1,6 +1,6 @@
 #!groovy
 // Check ub1 properties
-properties([desableConcurrentBuilds()})
+properties([disableConcurrentBuilds()})
 
 pipeline {
   agent {
