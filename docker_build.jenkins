@@ -38,7 +38,7 @@ pipeline {
         echo "================= start pushing image ================"
         dir ('docker/toolbox') {
           sh """
-          docker push studio1313/toolbox:latest
+          docker push efkril13/toolbox:latest
           """
         }
       }
