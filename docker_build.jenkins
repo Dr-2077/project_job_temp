@@ -32,5 +32,15 @@ pipeline {
         }
       }
     }
+    stage("docekr push") {
+      steps {
+        echo "================= start pushing image ================"
+        dir ('docker/toolbox') {
+          sh """
+          docekr push studio1313/toolbox:latest
+          """
+        }
+      }
+    }
   }
 }
