@@ -29,7 +29,7 @@ pipeline {
       steps {
         echo "================= start building image ================"
         dir ('docker/toolbox') {
-          sh 'docker build -t studio1313/toolbox:latest . '
+          sh 'docker build -t efkril13/toolbox:latest . '
         }
       }
     }
